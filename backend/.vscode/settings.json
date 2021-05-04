@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "imdb_proj\\Scripts\\python.exe",
+    "python.formatting.provider": "autopep8"
+}
