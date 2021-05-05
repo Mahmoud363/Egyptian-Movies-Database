@@ -21,7 +21,7 @@ class LoginForm extends React.Component {
             console.log('here after saving')
             window.location.replace("/")
         }).catch(err => {
-            window.location.reload()
+            alert("incorrect info")
         })
 
 

@@ -30,10 +30,12 @@ app.config["JSON_AS_ASCII"] = False
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 app.config.update(SESSION_COOKIE_SAMESITE="None", SESSION_COOKIE_SECURE=True)
 
+
 CORS(app)
 
 # app.json_encoder = DecimalEncoder
 mysql = MySQL(app)
+
 
 
 @app.route("/api/movies/", methods=["GET"])

@@ -14,6 +14,11 @@ const ReviewForm = () => {
         axios.post(`http://127.0.0.1:5000/api/movie/${movieID}/review/`, {
             'review': review,
             'rating': rating
+        }).then(res => {
+            window.location.reload()
+        }).catch(err => {
+            alert("you already have a review")
+            // 
         })
 
 

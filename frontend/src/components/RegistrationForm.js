@@ -37,7 +37,7 @@ class RegistrationForm extends React.Component {
             console.log('here after saving')
             window.location.replace("/")
         }).catch(err => {
-            console.log(err)
+            alert("incorrect info")
             // window.location.reload()
         })
 
